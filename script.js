@@ -41,7 +41,7 @@ const teamMembers = [
   
     teamMembers.forEach(member => {
       const card = document.createElement('div')
-      card.classList.add('col-md-4')
+      card.classList.add('col-md-4', 'mb-4', 'd-flex', 'justify-content-center')
   
       //style the BGColor of my card based on pos
       let backgroundColor
@@ -62,12 +62,18 @@ const teamMembers = [
       
   
       card.innerHTML = `
-              <div class="card">
+              <div class="card small-card">
+              <img src="${member.image}" class="card-img-top" alt="${member.name}">
                   <div class = "card-header">
                       ${member.name}
                   </div>
                   <div id="cardBody" class="card-body" style="background-color:${backgroundColor};">
+                      <p><strong>Position:</strong> ${member.age}</p>
                       <p><strong>Position:</strong> ${member.position}</p>
+                      <p><strong>Position:</strong> ${member.strengths}</p>
+                      <p><strong>Position:</strong> ${member.weaknesses}</p>
+                      <p><strong>Position:</strong> ${member.skills}</p>
+                      <p><strong>Position:</strong> ${member.biography}</p>
                   </div>
               </div>
           `
