@@ -10,7 +10,7 @@ const teamMembers = [
       weaknesses: 'heading ability',
       skills: ['Dribbling', 'Shooting', 'Passing'],
       biography:
-        'Lionel Messi is considered one of the greatest football players of all time...'
+        'Lionel Messi, born on June 24, 1987, in Rosario, Argentina, is widely regarded as one of the greatest footballers of all time, having spent the majority of his career at FC Barcelona where he won numerous titles including ten La Liga championships and four UEFA Champions League trophies. In 2021, he transferred to Paris Saint-Germain, continuing to showcase his exceptional skill and vision on the field. Internationally, Messi has been a key player for Argentina, leading the national team to victory in the Copa América in 2021 and the FIFA World Cup in 2022.'
     },
     {
       name: 'Angel Di Maria',
@@ -21,18 +21,18 @@ const teamMembers = [
       weaknesses: 'injury proneness, decision-making, inconsistency',
       skills: ['Dribbling', 'Fast', 'Passing', 'Shooting', 'High energy', 'Versatility'],
       biography:
-        'Lionel Messi is considered one of the greatest football players of all time...'
+        'Ángel Di María, born on February 14, 1988, in Rosario, Argentina, is a versatile and skilled footballer who has played for top clubs like Real Madrid, Manchester United, and Paris Saint-Germain, achieving significant success including a UEFA Champions League title with Real Madrid. Internationally, he has been pivotal for Argentina, helping the national team win the Copa América in 2021 and the FIFA World Cup in 2022. Known for his speed, agility, and goal-scoring ability, Di María remains a prominent figure in the world of football.'
     },
     {
-      name: 'Lionel Messi Jr II',
-      age: 36,
+      name: 'Neymar Jr',
+      age: 32,
       activePlayer: true,
-      position: 'mid',
-      strengths: 'Ball Control',
+      position: 'forward',
+      strengths: 'Ball Control, Fast and has a good eye for goals',
       weaknesses: 'heading ability',
-      skills: ['Dribbling', 'Shooting', 'Passing'],
+      skills: ['Dribbling', 'Shooting', 'Finishing','Versitile'],
       biography:
-        'Lionel Messi is considered one of the greatest football players of all time...'
+        'Neymar, born on February 5, 1992, in Mogi das Cruzes, Brazil, is a highly skilled footballer known for his exceptional dribbling, creativity, and goal-scoring abilities. He rose to prominence with Santos FC before transferring to FC Barcelona in 2013, where he formed a formidable attacking trio with Lionel Messi and Luis Suárez, winning numerous titles including the UEFA Champions League. In 2017, he moved to Paris Saint-Germain for a record transfer fee, continuing to showcase his talent and contributing significantly to the team's 'success domestically and in European competitions.'
     }
   ]
   
