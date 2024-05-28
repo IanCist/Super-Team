@@ -13,13 +13,13 @@ const teamMembers = [
         'Lionel Messi is considered one of the greatest football players of all time...'
     },
     {
-      name: 'Lionel Messi Jr',
+      name: 'Angel Di Maria',
       age: 36,
       activePlayer: true,
-      position: 'Defender',
-      strengths: 'Ball Control',
-      weaknesses: 'heading ability',
-      skills: ['Dribbling', 'Shooting', 'Passing'],
+      position: 'mid',
+      strengths: 'dribbling ability, quick feet, agility, and close control',
+      weaknesses: 'injury proneness, decision-making, inconsistency',
+      skills: ['Dribbling', 'Fast', 'Passing', 'Shooting', 'High energy', 'Versatility'],
       biography:
         'Lionel Messi is considered one of the greatest football players of all time...'
     },
@@ -63,17 +63,16 @@ const teamMembers = [
   
       card.innerHTML = `
               <div class="card small-card">
-              <img src="${member.image}" class="card-img-top" alt="${member.name}">
                   <div class = "card-header">
                       ${member.name}
                   </div>
                   <div id="cardBody" class="card-body" style="background-color:${backgroundColor};">
-                      <p><strong>Position:</strong> ${member.age}</p>
+                      <p><strong>Age:</strong> ${member.age}</p>
                       <p><strong>Position:</strong> ${member.position}</p>
-                      <p><strong>Position:</strong> ${member.strengths}</p>
-                      <p><strong>Position:</strong> ${member.weaknesses}</p>
-                      <p><strong>Position:</strong> ${member.skills}</p>
-                      <p><strong>Position:</strong> ${member.biography}</p>
+                      <p><strong>Strengths:</strong> ${member.strengths}</p>
+                      <p><strong>Weaknesses:</strong> ${member.weaknesses}</p>
+                      <p><strong>Skills:</strong> ${member.skills}</p>
+                      <p><strong>Biography:</strong> ${member.biography}</p>
                   </div>
               </div>
           `
