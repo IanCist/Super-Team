@@ -3,6 +3,7 @@
 const teamMembers = [
     {
       name: 'Lionel Messi',
+      img:'/image/image.png',
       age: 36,
       activePlayer: true,
       position: 'forward',
@@ -32,9 +33,20 @@ const teamMembers = [
       weaknesses: 'heading ability',
       skills: ['Dribbling', 'Shooting', 'Finishing','Versitile'],
       biography:
-        'Neymar, born on February 5, 1992, in Mogi das Cruzes, Brazil, is a highly skilled footballer known for his exceptional dribbling, creativity, and goal-scoring abilities. He rose to prominence with Santos FC before transferring to FC Barcelona in 2013, where he formed a formidable attacking trio with Lionel Messi and Luis Suárez, winning numerous titles including the UEFA Champions League. In 2017, he moved to Paris Saint-Germain for a record transfer fee, continuing to showcase his talent and contributing significantly to the team's 'success domestically and in European competitions.'
-    }
-  ]
+        "Neymar, born on February 5, 1992, in Mogi das Cruzes, Brazil, is a highly skilled footballer known for his exceptional dribbling, creativity, and goal-scoring abilities. He rose to prominence with Santos FC before transferring to FC Barcelona in 2013, where he formed a formidable attacking trio with Lionel Messi and Luis Suárez, winning numerous titles including the UEFA Champions League. In 2017, he moved to Paris Saint-Germain for a record transfer fee, continuing to showcase his talent and contributing significantly to the team's success domestically and in European competitions."
+    },
+    {
+      name: 'Cristiano Ronaldo',
+      ie: 'path/to/ronaldo.jpg', // Replace with actual path to image
+      img: 39,
+      activePlayer: true,
+      position: 'forward',
+      strengths: 'Heading ability, Free-kicks, Speed, Strength',
+      weaknesses: 'Defensive work rate',
+      skills: ['Dribbling', 'Shooting', 'Passing', 'Heading'],
+      biography: "Cristiano Ronaldo, born on February 5, 1985, in Madeira, Portugal, is one of the most accomplished and recognized footballers in the world. Having played for top clubs such as Manchester United, Real Madrid, and Juventus, he has won numerous league titles, UEFA Champions League trophies, and individual awards including multiple Ballon d'Or titles. Ronaldo is known for his incredible athleticism, goal-scoring prowess, and leadership on and off the pitch. He has also made significant contributions to the Portugal national team, leading them to victory in the 2016 UEFA European Championship and the 2019 UEFA Nations League."
+  },
+  ];
   
   function generateTeamCards () {
     const teamCardsContainer = document.getElementById('teamCards')
@@ -63,6 +75,7 @@ const teamMembers = [
   
       card.innerHTML = `
               <div class="card small-card">
+              <img src="${member.img}" class="card-img-top">
                   <div class = "card-header">
                       ${member.name}
                   </div>
@@ -85,4 +98,4 @@ const teamMembers = [
     })
   }
   
-  window.onload = generateTeamCards()
+  window.onload = generateTeamCards();
