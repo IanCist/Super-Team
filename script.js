@@ -3,7 +3,7 @@
 const teamMembers = [
     {
       name: 'Lionel Messi',
-      img:'/image/image.png',
+      img:'image/lionelmessi.jpeg',
       age: 36,
       activePlayer: true,
       position: 'forward',
@@ -15,6 +15,7 @@ const teamMembers = [
     },
     {
       name: 'Angel Di Maria',
+      img:'image/angeldimaria.jpg',
       age: 36,
       activePlayer: true,
       position: 'mid',
@@ -26,6 +27,7 @@ const teamMembers = [
     },
     {
       name: 'Neymar Jr',
+      img:'image/neymar.jpg',
       age: 32,
       activePlayer: true,
       position: 'forward',
@@ -36,20 +38,32 @@ const teamMembers = [
         "Neymar, born on February 5, 1992, in Mogi das Cruzes, Brazil, is a highly skilled footballer known for his exceptional dribbling, creativity, and goal-scoring abilities. He rose to prominence with Santos FC before transferring to FC Barcelona in 2013, where he formed a formidable attacking trio with Lionel Messi and Luis Suárez, winning numerous titles including the UEFA Champions League. In 2017, he moved to Paris Saint-Germain for a record transfer fee, continuing to showcase his talent and contributing significantly to the team's success domestically and in European competitions."
     },
     {
-      name: 'Cristiano Ronaldo',
-      ie: 'path/to/ronaldo.jpg', // Replace with actual path to image
-      img: 39,
+      name: 'Diego Godin',
+      img: 'image/diegogodin.jpg',
+      age: 38,
       activePlayer: true,
-      position: 'forward',
-      strengths: 'Heading ability, Free-kicks, Speed, Strength',
-      weaknesses: 'Defensive work rate',
-      skills: ['Dribbling', 'Shooting', 'Passing', 'Heading'],
-      biography: "Cristiano Ronaldo, born on February 5, 1985, in Madeira, Portugal, is one of the most accomplished and recognized footballers in the world. Having played for top clubs such as Manchester United, Real Madrid, and Juventus, he has won numerous league titles, UEFA Champions League trophies, and individual awards including multiple Ballon d'Or titles. Ronaldo is known for his incredible athleticism, goal-scoring prowess, and leadership on and off the pitch. He has also made significant contributions to the Portugal national team, leading them to victory in the 2016 UEFA European Championship and the 2019 UEFA Nations League."
+      position: 'defender',
+      strengths: 'Aerial ability, Leadership, Composure, Experience',
+      weaknesses: 'Mobility, Distribution under pressure, and Injury prone',
+      skills: ['Tackling', 'Positioning', 'Passing',],
+      biography: "Born on February 16, 1986, in Rosario, Uruguay, Godín is renowned for his leadership, defensive prowess, and aerial ability. He spent the prime years of his career at Atlético Madrid, where he was instrumental in their successes, including winning La Liga in 2014 and reaching two UEFA Champions League finals. Additionally, Godín has been a key figure for the Uruguayan national team, contributing to their Copa América victory in 2011."
   },
+  {
+    name: 'Diego Maradona',
+    img: 'image/diegogodin.jpg',
+    age: 37,
+    activePlayer: true,
+    position: 'defender',
+    strengths: 'Aerial ability, Leadership, Composure, Experience',
+    weaknesses: 'Mobility, Distribution under pressure, and Injury prone',
+    skills: ['Tackling', 'Positioning', 'Passing',],
+    biography: "Born on February 16, 1986, in Rosario, Uruguay, Godín is renowned for his leadership, defensive prowess, and aerial ability. He spent the prime years of his career at Atlético Madrid, where he was instrumental in their successes, including winning La Liga in 2014 and reaching two UEFA Champions League finals. Additionally, Godín has been a key figure for the Uruguayan national team, contributing to their Copa América victory in 2011."
+}
   ];
   
   function generateTeamCards () {
     const teamCardsContainer = document.getElementById('teamCards')
+    const teamCardsSecondRow = document.getElementById('teamCardsSecondRow')
   
     teamMembers.forEach(member => {
       const card = document.createElement('div')
@@ -68,10 +82,13 @@ const teamMembers = [
         case 'defender':
           backgroundColor = 'blue'
           break
-        default:
+        case 'mid-fielder':
           backgroundColor = 'gray'
       }
-      
+      function generateTeamCards() {
+        const teamCardsContainer = document.getElementById('teamCard');
+        const teamCardsSecondRow= document.getElementById('teamCardsSecondRow');
+      }
   
       card.innerHTML = `
               <div class="card small-card">
@@ -95,7 +112,6 @@ const teamMembers = [
       }
   
       teamCardsContainer.appendChild(card)
-    })
+    });
   }
-  
   window.onload = generateTeamCards();
