@@ -53,17 +53,16 @@ const teamMembers = [
     img: 'image/diegogodin.jpg',
     age: 37,
     activePlayer: true,
-    position: 'defender',
-    strengths: 'Aerial ability, Leadership, Composure, Experience',
-    weaknesses: 'Mobility, Distribution under pressure, and Injury prone',
-    skills: ['Tackling', 'Positioning', 'Passing',],
-    biography: "Born on February 16, 1986, in Rosario, Uruguay, Godín is renowned for his leadership, defensive prowess, and aerial ability. He spent the prime years of his career at Atlético Madrid, where he was instrumental in their successes, including winning La Liga in 2014 and reaching two UEFA Champions League finals. Additionally, Godín has been a key figure for the Uruguayan national team, contributing to their Copa América victory in 2011."
+    position: 'mid-fielder',
+    strengths: 'Dribbling, Creativity, Goal Scoring',
+    weaknesses: 'Defensive and work rate',
+    skills: ['Dribbling', 'Vision', 'Passing',],
+    biography: "Diego Maradona, born on October 30, 1960, in Buenos Aires, Argentina, is one of the most iconic footballers in history. Known for his incredible dribbling, creativity, and goal-scoring ability, Maradona led Argentina to World Cup victory in 1986. His career included stints at top clubs like Napoli and Barcelona, where he left a lasting legacy. Despite controversies, his influence on the game remains unparalleled."
 }
   ];
   
   function generateTeamCards () {
     const teamCardsContainer = document.getElementById('teamCards')
-    const teamCardsSecondRow = document.getElementById('teamCardsSecondRow')
   
     teamMembers.forEach(member => {
       const card = document.createElement('div')
@@ -84,10 +83,6 @@ const teamMembers = [
           break
         case 'mid-fielder':
           backgroundColor = 'gray'
-      }
-      function generateTeamCards() {
-        const teamCardsContainer = document.getElementById('teamCard');
-        const teamCardsSecondRow= document.getElementById('teamCardsSecondRow');
       }
   
       card.innerHTML = `
