@@ -50,7 +50,7 @@ const teamMembers = [
   },
   {
     name: 'Diego Maradona',
-    img: 'image/diegogodin.jpg',
+    img: 'image/diegomara.jpg',
     age: 37,
     activePlayer: true,
     position: 'mid-fielder',
